@@ -87,7 +87,7 @@ GWAS.GLS<-function(y,W=NULL,X,G=NULL,V=NULL,d=NULL,vU,vE,verbose=F, getContrasts
 
 #### Example comparing p-values from OLS, GLS and PC
 
-** Partition of data into training and testing
+** Partition of data into training and testing **
 ```R
 rm(list=ls())
 ##### DATA #############################################
@@ -101,9 +101,22 @@ rm(list=ls())
  XTRN<-X[-tst,] ; yTRN<-y[-tst]; XTST<-X[tst,] ; yTST<-y[tst]
 ```
 
-** OLS using BGData **
+** OLS using BGData without PC**
 ```R
  library(BGData)
- PVALUES.OLS=GWAS(y~1,data=new("BGData",geno=X.TRN,pheno=data.frame(y=y),map=data.frame()))
-
+ DATA=new("BGData",geno=XTRN,pheno=data.frame(y=yTRN),map=data.frame())
+ PVALUES.OLS=GWAS(y~1,data=DATA,method='lm')
+ plot(-log10(PVALUES.OLS[,4]))
 ```
+
+** OLS using BGData with 3-PC**
+```R
+ SVD=svd(scale(XTRN),nu=3,nv=0)$u
+ DATA@pheno$PC1=SVD[,1]
+ DATA@pheno$PC2=SVD[,2]
+ DATA@pheno$PC3=SVD[,3]
+ PVALUES.OLS_PC=GWAS(y~PC1+PC2+PC3,data=DATA,method='lm')
+ plot(-log10(PVALUES.OLS_PC[,4]))
+```
+
+
