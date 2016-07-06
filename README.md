@@ -6,7 +6,6 @@
 **Class meets:** M/W, 1:50-4:40pm, E111 Fee Hall.
 
 **Resources**:
-
     - [Course Content]( https://www.dropbox.com/s/fun60q4eevswgos/CourseContent.docx?dl=0 )
     - [Handout](https://www.dropbox.com/s/m1pyznfjnfyf5if/handout.docx?dl=0)
     - [BGLR](https://github.com/gdlc/bglr-r)
