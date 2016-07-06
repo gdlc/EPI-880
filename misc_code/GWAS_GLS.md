@@ -87,7 +87,23 @@ GWAS.GLS<-function(y,W=NULL,X,G=NULL,V=NULL,d=NULL,vU,vE,verbose=F, getContrasts
 
 #### Example comparing p-values from OLS, GLS and PC
 
+** Partition of data into training and testing
 ```R
+rm(list=ls())
+##### DATA #############################################
+ library(BGLR)
+ data(wheat); X=wheat.X; Y=wheat.Y
+ objects()
+ N<-nrow(X) ; p<-ncol(X)
+ y<-Y[,2]
+ set.seed(1235)
+ tst<-sample(1:N,size=150,replace=FALSE)
+ XTRN<-X[-tst,] ; yTRN<-y[-tst]; XTST<-X[tst,] ; yTST<-y[tst]
+```
 
+** OLS using BGData **
+```R
+ library(BGData)
+ PVALUES.OLS=GWAS(y~1,data=new("BGData",geno=X.TRN,pheno=data.frame(y=y),map=data.frame()))
 
 ```
