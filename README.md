@@ -15,7 +15,8 @@
   - [pedigreeR](https://github.com/Rpedigree/pedigreeR)
   - [PLINK](http://pngu.mgh.harvard.edu/~purcell/plink/)
   - Slides:
-  -  [M1](https://www.dropbox.com/s/pe9nvw1d6cnf22t/M1.pptx?dl=0)
+  -  [M1: Variable selection](https://www.dropbox.com/s/pe9nvw1d6cnf22t/M1.pptx?dl=0)
+  -  [M2: Shrinkage estimation](https://www.dropbox.com/s/0xf0h1cm4cmutpu/M2.pptx?dl=0)
   
 **Homework**
   - [HW1 (resampling)](https://github.com/gdlc/EPI-880/blob/master/assigments/HW1.md)
