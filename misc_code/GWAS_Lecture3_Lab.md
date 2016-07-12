@@ -5,9 +5,7 @@ Download data from [here](https://www.dropbox.com/s/a40mje6bdkuxwnm/DATA.rda?dl=
 ```R
 rm(list=ls())
 
-library(BGLR)
 library(BGData)
-library(qqman)
 
 load("~/Downloads/DATA.rda")
 
@@ -15,7 +13,6 @@ load("~/Downloads/DATA.rda")
 ### X2 : genotype matrix for 2764 equally spaced SNPs from a genome of size 500000 SNPs
 ### pheno : matrix of phenotypes (height adjusted for age, gender, and race)
 
-dev.off()
 y=pheno$AdjustedHeight
 TMP=GWAS(y~1,data=new('BGData',geno=X,pheno=data.frame(y=y)),method='lm')
 TMP2=GWAS(y~1,data=new('BGData',geno=X2,pheno=data.frame(y=y)),method='lm')
@@ -35,6 +32,8 @@ abline(h=1.3,col="red")
 > LAB 2 : MULTIPLE COMPARISONS CORRECTION USING SIMULATED PHENOTYPES
 
 ```R
+library(qqman)
+
 dev.off()
 rm(list=ls())
 load("~/Downloads/DATA.rda")
@@ -88,22 +87,6 @@ for(i in 1:length(h2.full)){
   plot(-log10(expected_p),-log10(observed_p),cex=.7)
 }
 
-#####  Manhattan plots
-
-dev.off()
-par(mfrow=c(2,2))
-for(i in 1:2){
-  plot(-log10(pval_unadjusted[[i]]),cex=.5,col="gray",ylab="-log10P",main=paste0("h2=",h2.full[i]," pval=unadjusted"))
-  points(x=QTL,col=2,cex=.7,pch=19,y=-log10(pval_unadjusted[[i]])[QTL])
-  abline(h=1.3,col="red")
-  abline(h=4.8,col="blue")
-}
-for(i in 1:2){
-  plot(-log10(pval_fdr[[i]]),cex=.5,col="gray",ylab="-log10P",main=paste0("h2=",h2.full[i]," pval=fdr"))
-  points(x=QTL,col=2,cex=.7,pch=19,y=-log10(pval_fdr[[i]])[QTL])
-  abline(h=1.3,col="red")
-}
-
 ### Permutation test
 
 n.permute=500
@@ -122,7 +105,7 @@ for(k in 1:ncol(X_1)){
   pval_permute2[k,] = (length(which(pval_permute < pval_unadjusted[[2]][k]))+1)/(n.permute+1)
 }
 
-#### Plots for all four methods
+#####  Manhattan plots
 
 par(mfrow=c(2,2))
 plot(-log10(pval_unadjusted[[2]]),cex=.5,col="gray",ylab="-log10P",main="unadjusted")
@@ -178,13 +161,13 @@ for(r in 1:reps){
   }
 }
 
-#### qq plots
+#### qq plots for rep 5 
 
 par(mfrow=c(1,2))
-qq(pval_unadjusted1[-QTL,5])
-qq(pval_unadjusted2[-QTL,5])
+qq(pval_fdr1[,5])
+qq(pval_fdr2[,5])
 
-#####  Manhattan plots
+#####  Manhattan plots for rep 5
 
 par(mfrow=c(2,1))
 plot(-log10(pval_fdr1[,5]),cex=.5,col="gray",ylab="-log10P",main="PC corrected")
@@ -199,12 +182,10 @@ abline(h=1.3,col="red")
 
 noncausalSNPs = ncol(X)-nQTL
 
-type1error1=type1error2=matrix(,reps,length(h2.full))
-for(i in 1:length(h2.full)){
-  for(j in 1:reps){
-    type1error1[j,i]=length(which(-log10(pval_fdr1[-QTL,j])>-log10(0.05)))
-    type1error2[j,i]=length(which(-log10(pval_fdr2[-QTL,j])>-log10(0.05)))
-  }
+type1error1=type1error2=matrix(,reps,1)
+for(j in 1:reps){
+    type1error1[j,]=length(which(-log10(pval_fdr1[-QTL,j])>-log10(0.05)))
+    type1error2[j,]=length(which(-log10(pval_fdr2[-QTL,j])>-log10(0.05)))
 }
 
 mean(type1error1/noncausalSNPs)
@@ -212,10 +193,10 @@ mean(type1error2/noncausalSNPs)
 
 #### Power
 
-power1=power2=matrix(,reps,length(h2.full))
+power1=power2=matrix(,reps,1)
 for(j in 1:reps){
-    power1[j,i]=length(which(-log10(pval_fdr1[QTL,j])>-log10(0.05)))
-    power2[j,i]=length(which(-log10(pval_fdr2[QTL,j])>-log10(0.05)))
+    power1[j,]=length(which(-log10(pval_fdr1[QTL,j])>-log10(0.05)))
+    power2[j,]=length(which(-log10(pval_fdr2[QTL,j])>-log10(0.05)))
 }
 
 mean(power1/nQTL)
