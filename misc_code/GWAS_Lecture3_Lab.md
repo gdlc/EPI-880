@@ -1,6 +1,6 @@
 Download data from [here](https://www.dropbox.com/s/a40mje6bdkuxwnm/DATA.rda?dl=0)
 
-> LAB 1 : SINGLE MARKER REGRESSIONS
+> LAB 1 : SINGLE MARKER REGRESSIONS WITH REAL HUMAN DATA
 
 ```R
 rm(list=ls())
@@ -32,7 +32,7 @@ abline(h=1.3,col="red")
 
 ```
 
-> LAB 2 : MULTIPLE COMPARISONS CORRECTION
+> LAB 2 : MULTIPLE COMPARISONS CORRECTION USING SIMULATED PHENOTYPES
 
 ```R
 dev.off()
@@ -133,7 +133,7 @@ points(x=QTL,col=2,cex=.7,pch=19,y=-log10(pval_permute2[QTL]))
 abline(h=1.3,col="red")
 
 ```
-> LAB 3: POPULATION STRUCTURE
+> LAB 3: POPULATION STRUCTURE USING SIMULATED PHENOTYPES
 
 ```R
 dev.off()
