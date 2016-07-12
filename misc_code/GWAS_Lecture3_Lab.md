@@ -1,3 +1,5 @@
+Download data from [here](https://www.dropbox.com/s/a40mje6bdkuxwnm/DATA.rda?dl=0)
+
 > LAB 1 : SINGLE MARKER REGRESSIONS
 
 ```R
@@ -6,7 +8,6 @@ rm(list=ls())
 library(BGLR)
 library(BGData)
 library(qqman)
-### Download data from [here](https://www.dropbox.com/s/a40mje6bdkuxwnm/DATA.rda?dl=0)
 
 #####################################################
 ###### LAB 1: SINGLE MARKER REGRESSIONS #############
