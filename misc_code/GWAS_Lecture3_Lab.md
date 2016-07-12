@@ -148,14 +148,13 @@ PC = cbind(pheno$PC1,pheno$PC2)
 X_1 = X
 X.new=scale(X_1); 
 nQTL=20
-h2.full = 0.5
+h2 = 0.5
 reps=10
 
-pval_unadjusted1=pval_fdr1=pval_unadjusted2=pval_fdr2=matrix(,ncol(X.new),reps)
+pval_fdr1=pval_fdr2=matrix(,ncol(X.new),reps)
 for(r in 1:reps){
-  for(i in 1:length(h2.full)){
+  for(i in 1:length(h2)){
     set.seed(10*r)
-    h2=h2.full[i]
     QTL=floor(seq(from=50,to=ncol(X.new),length=nQTL))
     nQTL=length(QTL); n=nrow(X.new)
     b=rnorm(n=nQTL,0,sqrt(h2))
@@ -167,9 +166,7 @@ for(r in 1:reps){
     TMP1=GWAS(y~PC,data=new('BGData',geno=X_1,pheno=data.frame(y=y),map=data.frame()),method='lm')
     TMP2=GWAS(y~1,data=new('BGData',geno=X_1,pheno=data.frame(y=y),map=data.frame()),method='lm')
     
-    pval_unadjusted1[,r]=TMP1[,4]
     pval_fdr1[,r]=p.adjust(TMP1[,4],"fdr")
-    pval_unadjusted2[,r]=TMP2[,4]
     pval_fdr2[,r]=p.adjust(TMP2[,4],"fdr")
     message("h2=",h2," rep=",r)
   }
