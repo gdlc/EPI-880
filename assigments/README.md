@@ -1,3 +1,3 @@
 #### Assigments
 
-   - [HW1: re-sampling](HW.md)
+   - [HW1: re-sampling](HW1.md)
