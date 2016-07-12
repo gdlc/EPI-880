@@ -9,7 +9,7 @@ library(BGLR)
 library(BGData)
 library(qqman)
 
-load("~/Dropbox/UAB/Research/BST880_Lecture3/DATA.rda")
+load("~/Downloads/DATA.rda")
 
 ### X : genotype matrix for first 3000 SNPs from a genome of size 500,000 SNPs
 ### X2 : genotype matrix for 2764 equally spaced SNPs from a genome of size 500000 SNPs
@@ -37,7 +37,8 @@ abline(h=1.3,col="red")
 ```R
 dev.off()
 rm(list=ls())
-load("~/Dropbox/UAB/Research/BST880_Lecture3/DATA.rda")
+load("~/Downloads/DATA.rda")
+
 set.seed(50)
 grp=kmeans(X2,centers=2,nstart=30)$cluster
 col = matrix(,nrow(pheno),1)
@@ -146,8 +147,9 @@ abline(h=1.3,col="red")
 ```R
 dev.off()
 rm(list=ls())
-load("~/Dropbox/UAB/Research/BST880_Lecture3/DATA.rda")
+load("~/Downloads/DATA.rda")
 
+set.seed(50)
 PC = cbind(pheno$PC1,pheno$PC2)
 X_1 = X
 X.new=scale(X_1); 
