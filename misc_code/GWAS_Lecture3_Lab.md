@@ -36,6 +36,7 @@ abline(h=1.3,col="red")
 
 ```R
 dev.off()
+rm(list=ls())
 load("~/Dropbox/UAB/Research/BST880_Lecture3/DATA.rda")
 set.seed(50)
 grp=kmeans(X2,centers=2,nstart=30)$cluster
@@ -144,6 +145,9 @@ abline(h=1.3,col="red")
 
 ```R
 dev.off()
+rm(list=ls())
+load("~/Dropbox/UAB/Research/BST880_Lecture3/DATA.rda")
+
 PC = cbind(pheno$PC1,pheno$PC2)
 X_1 = X
 X.new=scale(X_1); 
