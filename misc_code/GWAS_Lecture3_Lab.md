@@ -133,7 +133,7 @@ points(x=QTL,col=2,cex=.7,pch=19,y=-log10(pval_permute2[QTL]))
 abline(h=1.3,col="red")
 
 ```
-> LAB 3: POPULATION STRUCTURE USING SIMULATED PHENOTYPES
+> LAB 3: POPULATION STRUCTURE CORRECTION USING SIMULATED PHENOTYPES
 
 ```R
 dev.off()
