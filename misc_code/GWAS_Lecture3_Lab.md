@@ -6,6 +6,7 @@ Download data from [here](https://www.dropbox.com/s/a40mje6bdkuxwnm/DATA.rda?dl=
 rm(list=ls())
 
 library(BGData)
+library(qqman)
 
 load("~/Downloads/DATA.rda")
 
@@ -42,7 +43,6 @@ abline(h=1.3,col="red")
 > LAB 2 : MULTIPLE COMPARISONS CORRECTION USING SIMULATED PHENOTYPES
 
 ```R
-library(qqman)
 
 dev.off()
 rm(list=ls())
