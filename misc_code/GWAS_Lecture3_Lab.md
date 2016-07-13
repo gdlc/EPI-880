@@ -15,8 +15,8 @@ load("~/Downloads/DATA.rda")
 ### pheno : matrix of phenotypes (height adjusted for age, gender, and race)
 
 y=pheno$AdjustedHeight
-TMP=GWAS(y~1,data=new('BGData',geno=X,pheno=data.frame(y=y)),method='lm')
-TMP2=GWAS(y~1,data=new('BGData',geno=X2,pheno=data.frame(y=y)),method='lm')
+TMP=GWAS(y~1,data=new('BGData',geno=X,pheno=data.frame(y=y)),method='lm',mc.cores=1)
+TMP2=GWAS(y~1,data=new('BGData',geno=X2,pheno=data.frame(y=y)),method='lm',mc.cores=1)
 
 head(TMP)
 
@@ -76,7 +76,7 @@ for(i in 1:length(h2.full)){
   error<-rnorm(n=n,sd=sqrt(varE))
   y[[i]]<-u+error
   y_1 = y[[i]]
-  TMP<-GWAS(y_1~1,data=new('BGData',geno=X_1,pheno=data.frame(y_1)),method='lm')
+  TMP<-GWAS(y_1~1,data=new('BGData',geno=X_1,pheno=data.frame(y_1)),method='lm',mc.cores=1)
   
   pval_unadjusted[[i]]=TMP[,4]
   pval_fdr[[i]]=p.adjust(TMP[,4],"fdr")
@@ -98,7 +98,7 @@ pval_permute2 = matrix(,ncol(X_1),1)
 
 for(j in 1:n){
   y_1 = sample(y[[2]])
-  TMP<-GWAS(y_1~1,data=new('BGData',geno=X_1,pheno=data.frame(y_1)),method='lm')
+  TMP<-GWAS(y_1~1,data=new('BGData',geno=X_1,pheno=data.frame(y_1)),method='lm',mc.cores=1)
   pval_permute[j,]=min(TMP[,4])
   names(pval_permute) = names(which(TMP[,4]==min(TMP[,4])))
   message("h2=",h2," rep=", j)
@@ -155,8 +155,8 @@ for(r in 1:reps){
     error<-rnorm(n=n,sd=sqrt(varE))
     y<-u+error
     
-    TMP1=GWAS(y~PC,data=new('BGData',geno=X_1,pheno=data.frame(y=y),map=data.frame()),method='lm')
-    TMP2=GWAS(y~1,data=new('BGData',geno=X_1,pheno=data.frame(y=y),map=data.frame()),method='lm')
+    TMP1=GWAS(y~PC,data=new('BGData',geno=X_1,pheno=data.frame(y=y),map=data.frame()),method='lm',mc.cores=1)
+    TMP2=GWAS(y~1,data=new('BGData',geno=X_1,pheno=data.frame(y=y),map=data.frame()),method='lm',mc.cores=1)
     
     pval_fdr1[,r]=p.adjust(TMP1[,4],"fdr")
     pval_fdr2[,r]=p.adjust(TMP2[,4],"fdr")
