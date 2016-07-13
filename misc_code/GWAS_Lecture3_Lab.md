@@ -19,6 +19,16 @@ TMP2=GWAS(y~1,data=new('BGData',geno=X2,pheno=data.frame(y=y)),method='lm')
 
 head(TMP)
 
+#### qq plots
+
+expected_p=sort(seq(1/ncol(X),1,by=(1/ncol(X))),decreasing = FALSE)
+observed_p=sort(TMP[,4],decreasing = FALSE)
+
+par(mfrow=c(1,2))
+qq(TMP[,4]) ## Using package
+plot(-log10(expected_p),-log10(observed_p),pch=19,cex=.7)
+
+
 ################  Manhattan plots ##################
 
 plot(-log10(TMP[,4]),cex=.5)
@@ -78,13 +88,6 @@ for(i in 1:length(h2.full)){
 par(mfrow=c(1,2))
 for(i in 1:length(h2.full)){
   qq(pval_unadjusted[[i]])
-}
-
-par(mfrow=c(1,2))
-for(i in 1:length(h2.full)){
-  expected_p=sort(seq(1/ncol(X.new),1,by=(1/ncol(X.new))),decreasing = FALSE)
-  observed_p=sort(pval_unadjusted[[i]],decreasing = FALSE)
-  plot(-log10(expected_p),-log10(observed_p),cex=.7)
 }
 
 ### Permutation test
