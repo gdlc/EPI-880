@@ -8,7 +8,7 @@ We observed that prediction accuracy grows up to a point and then declines, prob
 In our second module we discussed Ridge Regression as a way to reduce the variance of estimates. In this HW we looked at combining both variable selection
 and shrinkage estimation. 
 
-Assignment:
+**Assignment**:
 
 - Replace the OLS estimation with RR estimates (for that you can use the code below)
 - Produce a plot with R-squared versus number of markers with results obtained using both OLS and Ridge Regression. 
