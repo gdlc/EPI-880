@@ -15,3 +15,38 @@ and shrinkage estimation.
 - Submit by Wednesday July 20th, 10:00am  a ppt or a pdf with your final plot and your code.
 
 Note: I’ll randomly draw a name and this person will need to explain what he/she did and discuss the results.
+
+
+
+```R
+
+# A non-otimized function to get RR estimates
+
+getRR<-function(y,X,lambda=NULL,h2=.5){
+    p=ncol(X)
+	y=y-mean(y)
+
+	if(is.null(lambda)){
+		lambda=p*(1-h2)/h2
+	}
+
+	C<-crossprod(X)
+	diag(C)=diag(C)+lambda
+	rhs=crossprod(X,y)
+	CInv=chol2inv(chol(C))
+	sol=crossprod(CInv,rhs)
+
+	return(sol)
+}
+
+# Example
+
+ library(BGLR)
+ data(wheat)
+ X=scale(wheat.X)/sqrt(ncol(wheat.X)) # must center and scale to use this function
+ y=scale(wheat.Y[,1],center=TRUE,scale=FALSE) 
+ 
+ bRR=getRR(y=y,X=X)
+ cor(y,X%*%bRR)
+ 
+```
