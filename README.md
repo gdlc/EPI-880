@@ -14,6 +14,7 @@
   - [BGData](https://github.com/quantgen/bgdata)
   - [pedigreeR](https://github.com/Rpedigree/pedigreeR)
   - [PLINK](http://pngu.mgh.harvard.edu/~purcell/plink/)
+
 **Slides**:
   -  [M1: Variable selection](https://www.dropbox.com/s/pe9nvw1d6cnf22t/M1.pptx?dl=0)
   -  [M2: Genome-Wide Association Studies (Yogasudha Veturi)](https://www.dropbox.com/s/yepttjnfrq0s5p2/Lecture_3_BST880.pdf?dl=0)
