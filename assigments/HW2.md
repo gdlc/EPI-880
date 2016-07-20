@@ -74,7 +74,7 @@ The solution can be shown to be
 
 The diagonal elements of X'X are the sum of squares of each of the columns of X. These sum of squares depend on the variance of each column. Since the constant that we add in the diagonal (lambda) is the same, we usually put all the columns of X into the same scale; otherwise there can be extremely different level of shrinkage for different effects. Thereofre, usually before fitting Ridge Regression we set
 
-	X=scale(X)
+		X=scale(X)
 	
 We will discuss in the course how to estimate lambda from data. For now we need to use a rule of thumb that allows us to compute 'sensible' RR estimates. We can guess lambda as a function of the R-squared of the model (h2, or gnomic heritability in genetic applications).
 
