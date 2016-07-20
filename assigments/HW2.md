@@ -51,3 +51,15 @@ getRR<-function(y,X,lambda=NULL,h2=.5){
  cor(y,X%*%bRR)
  
 ```
+
+
+** A note on scaling in Ridge Regression **
+
+In the linear regression model
+	y=Xb+e
+
+Ridge regression estimates are obtained as the solution to the following system of equations
+
+	[X'X + I*\lambda ]bRR=X'y
+ 
+where above, bRR is the Ridge regression estiamte of b, and \lambda is a constant
