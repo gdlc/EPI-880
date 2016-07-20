@@ -52,14 +52,20 @@ getRR<-function(y,X,lambda=NULL,h2=.5){
  
 ```
 
+\alpha 
 
 ** A note on scaling in Ridge Regression **
 
 In the linear regression model
+
 	y=Xb+e
 
-Ridge regression estimates are obtained as the solution to the following system of equations
+Ridge regression estimates are obtained as the solution to the following optimization problem
 
-	[X'X + I*\lambda ]bRR=X'y
+        bRR=argmin{   ()() + lambdab'b
+
+system of equations
+
+	[X'X + I*lambda ]bRR=X'y
  
-where above, bRR is the Ridge regression estiamte of b, and \lambda is a constant
+where above, bRR is the Ridge regression estiamte of b, and lambda is a constant
