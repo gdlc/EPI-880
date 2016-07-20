@@ -23,7 +23,8 @@ Note: I’ll randomly draw a name and this person will need to explain what he/s
 # A non-otimized function to get RR estimates
 
 getRR<-function(y,X,lambda=NULL,h2=.5){
-    p=ncol(X)
+        X=scale(X)
+        p=ncol(X)
 	y=y-mean(y)
 
 	if(is.null(lambda)){
@@ -43,7 +44,7 @@ getRR<-function(y,X,lambda=NULL,h2=.5){
 
  library(BGLR)
  data(wheat)
- X=scale(wheat.X)/sqrt(ncol(wheat.X)) # must center and scale to use this function
+ X=wheat.X
  y=scale(wheat.Y[,1],center=TRUE,scale=FALSE) 
  
  bRR=getRR(y=y,X=X)
