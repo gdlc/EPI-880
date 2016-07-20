@@ -52,7 +52,6 @@ getRR<-function(y,X,lambda=NULL,h2=.5){
  
 ```
 
-$\alpha$
 
 **A note on scaling in Ridge Regression**
 
@@ -62,10 +61,14 @@ In the linear regression model
 
 Ridge regression estimates are obtained as the solution to the following optimization problem
 
-        bRR=argmin{   ()() + lambdab'b
+        bRR=argmin{   (y-Xb)'(y-Xb) + $lambda$*b'b
 
-system of equations
+where y, X and b are a vector of phenotypes, a matrix of covariates and a vector of effects, respectively, and $lambda$ is the ridge-regression constant, also called regularization or shrinkage parameter.
 
-	[X'X + I*lambda ]bRR=X'y
+
+The solution can be shown to be
+
+
+	[X'X + I*c ]bRR=X'y
  
 where above, bRR is the Ridge regression estiamte of b, and lambda is a constant
