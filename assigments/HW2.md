@@ -52,7 +52,7 @@ getRR<-function(y,X,lambda=NULL,h2=.5){
  
 ```
 
-$$\alpha$$
+$\alpha$
 
 **A note on scaling in Ridge Regression**
 
