@@ -7,7 +7,9 @@ prior for effects. The equivalence holds for lambda=varE/varB.
 We have seen (see example 2.1 of the handout) that the regularization parameter (labmda) controls the extent of srhinkage of estimates of effects
 and with this: (i) the ability of the model to fit the training data, (ii) model degree of freedom, and (iii) prediction accuracy in testing data sets.
 
-**Choosing the regularization parameter using cross-validation**. Example 2.1. shows how to search for a value of lambda using a training-testing partition. Here is a simplified version of the code.
+**Choosing the regularization parameter using cross-validation**
+
+Example 2.1. shows how to search for a value of lambda using a training-testing partition. Here is a simplified version of the code.
 
 ```R
 rm(list=ls())
