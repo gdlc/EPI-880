@@ -9,7 +9,7 @@
 
 
   - [Course Content]( https://www.dropbox.com/s/fun60q4eevswgos/CourseContent.docx?dl=0 )
-  - Handout  [[MS word](https://www.dropbox.com/s/m1pyznfjnfyf5if/handout.docx?dl=0)]         [[pdf](https://www.dropbox.com/s/j3ylfuf0hht80qw/handout.pdf?dl=0)]
+  - Handout  [[MS word](https://www.dropbox.com/s/m1pyznfjnfyf5if/handout.docx?dl=0)]       [[pdf](https://www.dropbox.com/s/j3ylfuf0hht80qw/handout.pdf?dl=0)]
   - [BGLR](https://github.com/gdlc/bglr-r)
   - [BGData](https://github.com/quantgen/bgdata)
   - [pedigreeR](https://github.com/Rpedigree/pedigreeR)
