@@ -7,7 +7,7 @@ Please provide a presentation covering the following topics
 
 **Slide 1: Title**
 
-	Include: Project Title and your name
+  Include: Project Title and your name
 
 **Slide 2:  Research Question**
   
