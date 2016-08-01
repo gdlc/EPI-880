@@ -30,3 +30,18 @@ The following entry in the BGLR webpage also provides information about the mode
   - Within-environment estimated genomic heritability
   - DIC/ pD (see `fm$fit\` in BGLR)
   - Within-environment prediction accuracy
+
+*Data*: Wehat data set in BGLR (all traits, conduct analysis one trait at a time).
+
+
+**Estimating the proportion of variance of phenotypes explained by principal components**
+
+Using the [singular-value decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition) of the scaled/centered genotype matrix we can extract the eigenvectors that span the row-space of the genotype matrix. The eigen-vectors are mutually orthogonal; therefore we can decompose the genomic variance into components explained by eigen-vectors. Further details about this can be found in the following article by [Janss et al. (2012)](http://www.genetics.org/content/192/2/693.short).
+
+
+*Objectives*:  Estimate the proportion of variance explained by the 598 eigenvectors with positive eigenvalues.
+ 
+*Data*: Wehat data set in BGLR (all traits, conduct analysis one trait at a time).  
+
+*Methods**: to estimate the fraction of variance explained by PCs, use the `saveEffects=TRUE`, see the following entry for further details: [link-1](https://github.com/gdlc/BGLR-R/blob/master/inst/md/example_saveEffects.md), [link-2](https://github.com/gdlc/BGLR-R/blob/master/inst/md/heritability.md).
+
