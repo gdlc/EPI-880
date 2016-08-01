@@ -16,6 +16,8 @@ The following entry in the BGLR webpage also provides information about the mode
 
 *Data*: Wehat data set in BGLR (environments 1-3)
 
+---------------------------------------------------------------------------------------------------------------------------------------
+
 **Modeling Genetic Heterogneity using Interactions**
 
 In the models covered in the course we have assumed that the regression of phenotypes on markers is homogeneous across subjects.
@@ -33,6 +35,7 @@ The following entry in the BGLR webpage also provides information about the mode
 
 *Data*: Wehat data set in BGLR (all traits, conduct analysis one trait at a time).
 
+---------------------------------------------------------------------------------------------------------------------------------------
 
 **Estimating the proportion of variance of phenotypes explained by principal components**
 
