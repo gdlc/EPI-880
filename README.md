@@ -27,3 +27,6 @@
   - [HW2 (combining GWAS and Ridge Regression)](https://github.com/gdlc/EPI-880/blob/master/assigments/HW2.md)
   - [HW3 (Shrinkage Estimation: Ridge Regression Versus Bayesian)](https://github.com/gdlc/EPI-880/blob/master/assigments/HW3.md)
   - [HW4 (Final project proposal)](https://github.com/gdlc/EPI-880/blob/master/assigments/HW4_project_proposal.md)
+  - 
+  
+**[Suggested Projects]()**
