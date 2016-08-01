@@ -29,4 +29,4 @@
   - [HW4 (Final project proposal)](https://github.com/gdlc/EPI-880/blob/master/assigments/HW4_project_proposal.md)
   - 
   
-**[Suggested Projects]()**
+**Suggested Projects** [link]()
