@@ -11,7 +11,7 @@ The following entry in the BGLR webpage also provides information about the mode
 *Objectives*: Compare stratified analyses and interaction model based on:
 
   - Within-environment estimated genomic heritability
-  - DIC/ pD (see `fm$fit\` in BGLR)
+  - DIC/ pD (see `fm$fit` in BGLR)
   - Within-environment prediction accuracy
 
 *Data*: Wehat data set in BGLR (environments 1-3)
