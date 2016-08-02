@@ -16,11 +16,11 @@
   - [PLINK](http://pngu.mgh.harvard.edu/~purcell/plink/)
 
 **Slides**:
-  -  M1: Variable selection [ppt](https://www.dropbox.com/s/wjd9h25xgmvm7np/M1_varSelection.ppt?dl=0)  [pdf](https://www.dropbox.com/s/wjd9h25xgmvm7np/M1_varSelection.pdf?dl=0)
+  -  M1: Variable selection [ppt](https://www.dropbox.com/s/pe9nvw1d6cnf22t/M1_varSelection.pptx?dl=0)  [pdf](https://www.dropbox.com/s/wjd9h25xgmvm7np/M1_varSelection.pdf?dl=0)
   -  M2: Genome-Wide Association Studies (Yogasudha Veturi)   [pdf](https://www.dropbox.com/s/yepttjnfrq0s5p2/Lecture_3_BST880.pdf?dl=0)
-  -  M3: Shrinkage estimation [ppt](https://www.dropbox.com/s/0xf0h1cm4cmutpu/M2.pptx?dl=0)  [pdf]()
-  -  M4: Bayesian Methods [ppt](https://www.dropbox.com/s/423cj2xob7apecv/M4.pptx?dl=0)  [pdf]()
-  -  M5: Semi-parametric regression using Kernel Methods [ppt](https://www.dropbox.com/s/i73a06clbur5i4j/RKHS.pptx?dl=0)  [pdf]()
+  -  M3: Shrinkage estimation [ppt](https://www.dropbox.com/s/0xf0h1cm4cmutpu/M2_RR_GBLUP.pptx?dl=0)  [pdf](https://www.dropbox.com/s/qiuxchs3jygttkt/M2_RR_GBLUP.pdf?dl=0)
+  -  M4: Bayesian Methods [ppt]()  [pdf]()
+  -  M5: Semi-parametric regression using Kernel Methods [ppt](https://www.dropbox.com/s/i73a06clbur5i4j/M3_RKHS.pptx?dl=0)  [pdf](https://www.dropbox.com/s/nakfoy25ql3o2en/M3_RKHS.pdf?dl=0)
   
 **Homework**
   - [HW1 (resampling)](https://github.com/gdlc/EPI-880/blob/master/assigments/HW1.md)
