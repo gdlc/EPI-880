@@ -16,7 +16,7 @@
   - [PLINK](http://pngu.mgh.harvard.edu/~purcell/plink/)
 
 **Slides**:
-  -  M1: Variable selection [ppt](https://www.dropbox.com/s/pe9nvw1d6cnf22t/M1.pptx?dl=0)  [pdf]()
+  -  M1: Variable selection [ppt](https://www.dropbox.com/s/wjd9h25xgmvm7np/M1_varSelection.ppt?dl=0)  [pdf](https://www.dropbox.com/s/wjd9h25xgmvm7np/M1_varSelection.pdf?dl=0)
   -  M2: Genome-Wide Association Studies (Yogasudha Veturi)   [pdf](https://www.dropbox.com/s/yepttjnfrq0s5p2/Lecture_3_BST880.pdf?dl=0)
   -  M3: Shrinkage estimation [ppt](https://www.dropbox.com/s/0xf0h1cm4cmutpu/M2.pptx?dl=0)  [pdf]()
   -  M4: Bayesian Methods [ppt](https://www.dropbox.com/s/423cj2xob7apecv/M4.pptx?dl=0)  [pdf]()
