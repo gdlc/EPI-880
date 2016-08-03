@@ -7,16 +7,17 @@ Data can be downloaded from the following [link](https://www.dropbox.com/s/8mfk0
 ```R
  load('~/Dropbox/GENOMIC_PREDICTION_COURSE/data/examples/data/Z.RData')
  library(BGData)
- SUMMARIES=summarize(Z)
+ tmp=colMeans(Z,na.rm=T)/2
+ MAF=ifelse(tmp<.05,tmp,1-tmp)
  minMAF=.01
- tmp=(SUMMARIES[,'sd']>sqrt(2*minMAF*(1-minMAF)))&(SUMMARIES[,'freq_na']<.05)
- Z=Z[,tmp]
+ Z=Z[,MAF>=minMAF]
 ```
 
 **Computing genomic relationships**
 
 ```R
- G=getG(Z)
+ Z=scale(Z)/sqrt(ncol(Z))
+ G=tcrossprod(Z)
  plot(diag(G))
  tmp=rowSums(G>.1)-1 
  plot(tmp)
@@ -50,7 +51,6 @@ Data can be downloaded from the following [link](https://www.dropbox.com/s/8mfk0
 **Various Bayesian Models**
 ```R
  library(BGLR)
- Z=scale(Z)/sqrt(ncol(Z))
 
  # GBLUP
   fmGBLUP=BGLR(y=y,ETA=list(list(K=G,model='RKHS')),nIter=12000,burnIn=2000,saveAt='GBLUP_')
