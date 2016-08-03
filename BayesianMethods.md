@@ -13,6 +13,40 @@ Data can be downloaded from the following [link](https://www.dropbox.com/s/8mfk0
  Z=Z[,MAF>=minMAF]
 ```
 
+**Computing LD and comparing it with that of in the mice data set**
+```R
+load('~/Dropbox/GENOMIC_PREDICTION_COURSE/data/examples/data/Z.RData')
+
+p=ncol(Z)
+COR.NU=matrix(nrow=p,ncol=500,NA)
+
+for(i in 1:500){
+	print(i)
+    for(j in 1:(p-i)){
+         COR.NU[j,i]=cor(Z[,j],Z[,j+i])
+    }    
+}
+
+library(BGLR)
+data(mice)
+Z=mice.X
+p=ncol(Z)
+COR.MICE=matrix(nrow=p,ncol=500,NA)
+
+for(i in 1:500){
+	print(i)
+    for(j in 1:(p-i)){
+         COR.MICE[j,i]=cor(Z[,j],Z[,j+i])
+    }    
+}
+
+R2.MICE=colMeans(COR.MICE^2,na.rm=T)
+R2.NU=colMeans(COR.NU^2,na.rm=T)
+plot(R2.MICE,col=2,ylim=c(1,0))
+points(R2.NU,col=4)
+
+
+```
 **Computing genomic relationships**
 
 ```R
