@@ -8,6 +8,9 @@ Data can be downloaded from the following [link](https://www.dropbox.com/s/8mfk0
  load('~/Dropbox/GENOMIC_PREDICTION_COURSE/data/examples/data/Z.RData')
  library(BGData)
  SUMMARIES=summarize(Z)
+ minMAF=.01
+ tmp=(SUMMARIES[,'sd']>sqrt(2*minMAF*(1-minMAF)))&(SUMMARIES[,'freq_na']<.05)
+ Z=Z[,tmp]
 ```
 
 **Computing genomic relationships**
