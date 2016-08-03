@@ -89,6 +89,6 @@ Data can be downloaded from the following [link](https://www.dropbox.com/s/8mfk0
 
 
 ### Proposed tasks
- -1 Run the simulation above for nQTL=5,10,20,50,100,500,p  and estimate the proportion of non-zero effects (`probIn`) with BayesB
- -2 Modify the above code by introducing a testing set, compare the prediction accuracy of `BRR`, `BayesA` and `BayesB` over a number of TRN-TST partitions.
- -3 Modify the simultation by including dominance, estimate using G-BLUP the heritability for an additive only moodel and an additive+dominance model using G-BLUP.
+ - Run the simulation above for nQTL=5,10,20,50,100,500,p  and estimate the proportion of non-zero effects (`probIn`) with BayesB
+ - Modify the above code by introducing a testing set, compare the prediction accuracy of `BRR`, `BayesA` and `BayesB` over a number of TRN-TST partitions.
+ - Modify the simultation by including dominance, estimate using G-BLUP the heritability for an additive only moodel and an additive+dominance model using G-BLUP.
