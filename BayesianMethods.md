@@ -8,7 +8,7 @@ Data can be downloaded from the following [link](https://www.dropbox.com/s/8mfk0
  load('~/Dropbox/GENOMIC_PREDICTION_COURSE/data/examples/data/Z.RData')
  library(BGData)
  tmp=colMeans(Z,na.rm=T)/2
- MAF=ifelse(tmp<.05,tmp,1-tmp)
+ MAF=ifelse(tmp<.5,tmp,1-tmp)
  minMAF=.01
  Z=Z[,MAF>=minMAF]
 ```
