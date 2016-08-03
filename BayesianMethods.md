@@ -76,16 +76,6 @@ Data can be downloaded from the following [link](https://www.dropbox.com/s/8mfk0
   ETA=list(list(X=Z,model='BL'))
   fmBL=BGLR(y=y,ETA=ETA,nIter=12000,burnIn=2000,saveAt='BL_')
 ``` 
-**A two-step approach**
-```R
- TMP=GWAS(y~1,method='lm',data=BGData(pheno=data.frame(y=y),geno=Z))
- x=TMP[,4]
- thresholds=c(.995,.99,.95,.9,.66,.5,.25)
- tmp=sort(c(max(x)+.1,min(x)-.1,quantile(x,prob=thresholds)))
- groups=cut(x,breaks=tmp)
- ETA=list(list(X=Z,model='BRR_sets',sets=groups))
- fmBRRSets=BGLR(y=y,ETA=ETA,nIter=12000,burnIn=2000,saveAt='BRRs_')
-```
 
 
 ### Proposed tasks
