@@ -21,7 +21,7 @@
   -  M3: Shrinkage estimation [ppt](https://www.dropbox.com/s/0xf0h1cm4cmutpu/M2_RR_GBLUP.pptx?dl=0)  [pdf](https://www.dropbox.com/s/qiuxchs3jygttkt/M2_RR_GBLUP.pdf?dl=0)
   -  M4: Bayesian Methods [ppt](https://www.dropbox.com/s/pkbq05c3r7bz9bj/M3_BayesianShrinkageVarSelection.pptx?dl=0)  [pdf](https://www.dropbox.com/s/lv3balc0rbktjf1/M3_BayesianShrinkageVarSelection.pdf?dl=0)
   -  M5: Semi-parametric regression using Kernel Methods [ppt](https://www.dropbox.com/s/i73a06clbur5i4j/M3_RKHS.pptx?dl=0)  [pdf](https://www.dropbox.com/s/nakfoy25ql3o2en/M3_RKHS.pdf?dl=0)
-  -  M6: Bayesian Regularized Neural Networks [ppt](https://www.dropbox.com/s/12ml8g8qrljoq5x/BRNN.pptx?dl=0)
+  -  M6: Bayesian Regularized Neural Networks [ppt](https://www.dropbox.com/s/12ml8g8qrljoq5x/BRNN.pptx?dl=0)  [pdf](https://www.dropbox.com/s/klz8p09hei7shug/BRNN.pdf?dl=0)
 
 **Homework**
   - [HW1 (resampling)](https://github.com/gdlc/EPI-880/blob/master/assigments/HW1.md)
