@@ -8,8 +8,8 @@
 	- Provide references, including reference to the software used or the origin of the data or methods used.
 	- Sends your slides the morning of the day you are presenting (see table below).
 
-**Suggested Structure**
-	- Background for the problem. Why are we interested on this? (s2)
+**Suggested Structure ** (suggested #of slides)
+	- Background for the problem. Why are we interested on this? (2)
 	- Research question  (1)
 	- Data (1)
 	- Methods, be brief and minimize equations (1)
