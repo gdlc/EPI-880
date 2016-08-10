@@ -1,5 +1,4 @@
-#### Final Project 
-
+## Final Project 
 
 **Presentation Format**
 	- Duration: 12 minutes + 3 minutes for 1 or 2 questions (this follows standard scientific meeting format).
