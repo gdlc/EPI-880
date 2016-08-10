@@ -1,22 +1,20 @@
 ## Final Project 
 
 **Presentation Format**
-
-	- Duration: 12 minutes + 3 minutes for 1 or 2 questions (this follows standard scientific meeting format).
-	- To achieve the above goal consider having 12 or less slides.
-	- Focus on minimizing the slides so that you do not provide information that is not central and you do not need to rush when presenting.
-	- Do not cut and paste text or formulas from other sources
-	- Provide references, including reference to the software used or the origin of the data or methods used.
-	- Sends your slides the morning of the day you are presenting (see table below).
+	* Duration: 12 minutes + 3 minutes for 1 or 2 questions (this follows standard scientific meeting format).
+	* To achieve the above goal consider having 12 or less slides.
+	* Focus on minimizing the slides so that you do not provide information that is not central and you do not need to rush when presenting.
+	* Do not cut and paste text or formulas from other sources
+	* Provide references, including reference to the software used or the origin of the data or methods used.
+	* Sends your slides the morning of the day you are presenting (see table below).
 
 **Suggested Structure ** (suggested #of slides)
-
-	- Background for the problem. Why are we interested on this? (2)
-	- Research question  (1)
-	- Data (1)
-	- Methods, be brief and minimize equations (1)
-	- Results (2-4)
-	- Conclusions (1)
+	* Background for the problem. Why are we interested on this? (2)
+	* Research question  (1)
+	* Data (1)
+	* Methods, be brief and minimize equations (1)
+	* Results (2-4)
+	* Conclusions (1)
 
 **Dates/times for the presentations**
 
