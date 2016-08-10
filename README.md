@@ -53,7 +53,7 @@ Your presentation should cover the following topics (suggested slides)
 *Dates/times for the presentations*
 
 Day 	|Time-slot |	Presenter |
-|-----------------------------------|
+
 Monday	| 1:45-2:00|	Mccarthy, Kyle Andrew|
 	|2:00-2:15|	Chen, Zhiheng|
 	|2:15-2:30|	Enciso, Felix Eugenio|
@@ -72,4 +72,4 @@ Wednesday|	1:45-2:00|	Pickens, Charles Austin|
 	|3:15-4:00|	Mandal, Raka|
 	|4:00-4:15|	|
 	|4:15-4:30|	|
---------|---------|------------------|
+
