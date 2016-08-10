@@ -52,25 +52,25 @@ Your presentation should cover the following topics (suggested slides)
 
 *Dates/times for the presentations*
 
-Day 	|Time-slot |	Presenter
---------------------------------------------
-Monday	| 1:45-2:00|	Mccarthy, Kyle Andrew
-	|2:00-2:15|	Chen, Zhiheng
-	|2:15-2:30|	Enciso, Felix Eugenio
-	|2:30-2:45|	Li, Leyi
-	|2:45-3:00|	Break
-	|3:00-3:15|	Alex
-	|3:15-4:00v	Hwasoon
-	|4:00-4:15|	Mukerjee, Shyamali
-	|4:15-4:30|	
---------------------------------------------------------
-Wednesday|	1:45-2:00|	Pickens, Charles Austin
-	|2:00-2:15|	Nawaz, Muhammad
-	|2:15-2:30|	Yeni
-	|2:30-2:45|	Liang, Yukun
-	|2:45-3:00|	Break
-	|3:00-3:15|	Wang, Qi
-	|3:15-4:00|	Mandal, Raka
-	|4:00-4:15|	
-	|4:15-4:30|	
---------------------------------------------------------
+Day 	|Time-slot |	Presenter |
+--------|----------|---------------|
+Monday	| 1:45-2:00|	Mccarthy, Kyle Andrew|
+	|2:00-2:15|	Chen, Zhiheng|
+	|2:15-2:30|	Enciso, Felix Eugenio|
+	|2:30-2:45|	Li, Leyi|
+	|2:45-3:00|	Break|
+	|3:00-3:15|	Alex|
+	|3:15-4:00v	Hwasoon|
+	|4:00-4:15|	Mukerjee, Shyamali|
+	|4:15-4:30|	|
+--------|---------|-------------------|
+Wednesday|	1:45-2:00|	Pickens, Charles Austin|
+	|2:00-2:15|	Nawaz, Muhammad|
+	|2:15-2:30|	Yeni|
+	|2:30-2:45|	Liang, Yukun|
+	|2:45-3:00|	Break|
+	|3:00-3:15|	Wang, Qi|
+	|3:15-4:00|	Mandal, Raka|
+	|4:00-4:15|	|
+	|4:15-4:30|	|
+--------|---------|------------------|
