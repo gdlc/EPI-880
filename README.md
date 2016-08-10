@@ -63,7 +63,6 @@ Monday	| 1:45-2:00|	Mccarthy, Kyle Andrew|
 	|3:15-4:00v	Hwasoon|
 	|4:00-4:15|	Mukerjee, Shyamali|
 	|4:15-4:30|	|
---------|---------|-------------------|
 Wednesday|	1:45-2:00|	Pickens, Charles Austin|
 	|2:00-2:15|	Nawaz, Muhammad|
 	|2:15-2:30|	Yeni|
