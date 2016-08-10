@@ -2,11 +2,12 @@
 
 **Presentation Format**
 * Duration: 12 minutes + 3 minutes for 1 or 2 questions (this follows standard scientific meeting format).
-* To achieve the above goal consider having 12 or less slides.
-* Focus on minimizing the slides so that you do not provide information that is not central and you do not need to rush when presenting.
-* Do not cut and paste text or formulas from other sources
-* Provide references, including reference to the software used or the origin of the data or methods used.
+* To achieve the above goal consider having <=12 slides.
+* Do not provide information that is not central and be sure that you do not need to rush when presenting.
+* Do not cut and paste text or formulas from other sources.
+* Provide references for the software used or the origin of the data or methods used.
 * Sends your slides the morning of the day you are presenting (see table below).
+* Practice at least 4 times your presentation.
 
 **Suggested Structure ** (suggested #of slides)
 * Background for the problem. Why are we interested on this? (2)
