@@ -9,12 +9,12 @@
 * Sends your slides the morning of the day you are presenting (see table below).
 
 **Suggested Structure ** (suggested #of slides)
-	* Background for the problem. Why are we interested on this? (2)
-	* Research question  (1)
-	* Data (1)
-	* Methods, be brief and minimize equations (1)
-	* Results (2-4)
-	* Conclusions (1)
+* Background for the problem. Why are we interested on this? (2)
+* Research question  (1)
+* Data (1)
+* Methods, be brief and minimize equations (1)
+* Results (2-4)
+* Conclusions (1)
 
 **Dates/times for the presentations**
 
