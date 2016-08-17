@@ -37,5 +37,4 @@ Wednesday|	1:45-2:00|	Pickens, Charles Austin|
 	|2:45-3:00|	Break|
 	|3:00-3:15|	Wang, Qi|
 	|3:15-4:00|	Mandal, Raka|
-	|4:00-4:15|	|
-	|4:15-4:30|	|
+	|4:00-4:15|	Toledo, Hugo|
